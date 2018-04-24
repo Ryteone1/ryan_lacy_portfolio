@@ -1,0 +1,239 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Marcellus SC", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  /*color:#666;*/
+}
+
+
+
+
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  /*opacity:0.70;*/
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/light-header-bg.png');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/keyboard-dark-bg.jpg');
+  min-height:400px;
+  /*opacity: 0.6;*/
+}
+
+.pimg3{
+  background-image:url('../img/dog.jpeg');
+  min-height:500px;
+  opacity: 0.5;
+}
+
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+  
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+
+}
+
+.section-dark:before {
+  position: absolute;
+  /*border: 0.25rem solid #282e34;*/
+  /*border-top: 0.25rem solid #ddd;*/
+  border: 4px solid red;
+  /*border-bottom: 0.25rem solid #282e34;*/
+  /*border-radius: 0.5rem;*/
+  content: '';
+  /*top: -0.5rem;*/
+  /*bottom: -0.5rem;*/
+  /*left: -0.5rem;*/
+  /*right: -0.5rem;*/
+  /*border: 0.25rem solid rgba(255, 255, 255, 0.85);*/
+}
+
+.section-two {
+  /*background-image: url("../img/black-texture.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;*/
+
+  background-color:#282e34;
+  color:#ddd;
+  position: relative; 
+
+}
+
+.section-three {
+  background-image: url("../img/atom.gif");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*background-color:#282e34;*/
+  color:#ddd;
+  position: relative; 
+  height: 300px;
+
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  color:#border-style: dot-dot-dash;;
+  font-size:30px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+
+  perspective: 500px;
+  -webkit-perspective: 500px;
+
+}
+
+
+.border{
+  position: relative;
+  background-image: url("../img/black-texture.jpg");
+  background-position: center;
+  background-size: cover;
+  
+  /*background-color:#111;*/
+  color:#fff;
+  padding:20px;
+
+  /*text-shadow: 4px 4px 4px #aaa;*/
+ 
+  /*font-weight: 100;*/
+  /*font-size: 10rem;*/
+  /*letter-spacing: 2px;*/
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  /*border: solid purple 8px;*/
+  width: 20%;
+  margin: auto;
+
+  display: block;
+}
+
+.border:before {
+  border: 0.2rem solid transparent; 
+  border-image-source: url("../img/black-texture.jpg");
+  border-image-repeat: repeat;
+  border-image-slice: 8;
+  border-image-outset: 1;  
+  border-radius: 0,5rem;
+  content: '';
+  position: absolute;
+  top: -0.25rem;
+  bottom: -0.25rem;
+  left: -0.25rem;
+  right: -0.25rem;
+
+  /*transform: translateY(-200%);*/
+
+}
+
+
+
+@keyframes floating {
+  0% {transform: translate(0, 0px) rotateY(-15deg)};
+  /*65% {transform: translate(0, 15px) rotateY(10deg) rotateX(50deg)};*/
+  /*50% {transform: translate(0, 0px) rotateY(60deg)};*/
+  50% {transform: translate(0, 0px) rotateY(30deg)};
+  51% {transform: translate(0, 0px) rotateY(30deg)};
+
+  100% {transform: translate(0, 0px) rotateY(-30deg)};
+
+.subtitle {
+  margin-top: 50px;
+}
+
+
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /*background-color: rgba(227, 7, 51, 0.81);*/
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+  background-image: url("../img/black-texture.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width: 800px;
+  
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  /*border: 0.25rem solid red;*/
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color:#ddd;
+  font-family: 'Lora';
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #ddd;
+  font-family: 'Lora';
+}
