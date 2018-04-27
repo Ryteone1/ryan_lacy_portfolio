@@ -34,7 +34,7 @@ body, html{
 .pimg2{
   background-image:url('../img/keyboard-dark-bg.jpg');
   min-height:400px;
-  /*opacity: 0.6;*/
+  opacity: 0.6;
 }
 
 .pimg3{
@@ -101,8 +101,9 @@ body, html{
   top:50%;
   width:100%;
   text-align:center;
-  color:#000;
-  color:#border-style: dot-dot-dash;;
+  /*color:#000;*/
+  color:#282e34;
+  /*color:#border-style: dot-dot-dash;*/
   font-size:30px;
   letter-spacing:8px;
   text-transform:uppercase;
@@ -110,6 +111,11 @@ body, html{
   perspective: 500px;
   -webkit-perspective: 500px;
 
+}
+
+em {
+  font-size: 40px;
+  font-style: normal;
 }
 
 
@@ -129,10 +135,10 @@ body, html{
   /*font-size: 10rem;*/
   /*letter-spacing: 2px;*/
   animation-name: floating;
-  animation-duration: 5s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-direction: alternate;
+  animation-direction: forwards;
   /*border: solid purple 8px;*/
   width: 20%;
   margin: auto;
@@ -146,40 +152,46 @@ body, html{
   border-image-repeat: repeat;
   border-image-slice: 8;
   border-image-outset: 1;  
-  border-radius: 0,5rem;
+  /*border-radius: 0.5rem;*/
   content: '';
   position: absolute;
-  top: -0.25rem;
-  bottom: -0.25rem;
-  left: -0.25rem;
-  right: -0.25rem;
-
+  top: -0.15rem;
+  bottom: -0.15rem;
+  left: -0.15rem;
+  right: -0.15rem;
   /*transform: translateY(-200%);*/
-
 }
-
 
 
 @keyframes floating {
-  0% {transform: translate(0, 0px) rotateY(-15deg)};
-  /*65% {transform: translate(0, 15px) rotateY(10deg) rotateX(50deg)};*/
-  /*50% {transform: translate(0, 0px) rotateY(60deg)};*/
-  50% {transform: translate(0, 0px) rotateY(30deg)};
-  51% {transform: translate(0, 0px) rotateY(30deg)};
 
-  100% {transform: translate(0, 0px) rotateY(-30deg)};
+  0%, 50%, 100% {
+    transform: rotateY(0);
+  }
 
-.subtitle {
-  margin-top: 50px;
+  25% {
+    transform: rotateY(-15deg);
+  }
+
+  75% {
+    transform: rotateY(15deg);
+  }
+
 }
 
+
+.subtitle {
+  /*margin-top: 50px;*/
+  
+  /*text-shadow: 2px 2px 8px #FF0000;*/
+}
 
 
 .ptext .border.trans{
   background-color:transparent;
 }
 
-@media(max-width:568px){
+@media only screen and (max-width:568px){
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
