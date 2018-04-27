@@ -114,6 +114,14 @@ body, html{
 
 }
 
+.subtitle {
+  /*margin-top: 50px;*/
+  
+  text-shadow: 2px 2px 8px #666;
+  /*text-shadow: 2px 2px 4px #000000;*/
+  /*text-shadow: 2px 2px 8px;*/
+}
+
 em {
   font-size: 40px;
   font-style: normal;
@@ -182,15 +190,6 @@ em {
     transform: rotateY(15deg);
   }
 
-}
-
-
-.subtitle {
-  /*margin-top: 50px;*/
-  
-  /*text-shadow: 2px 2px 8px #FF0000;*/
-  /*text-shadow: 2px 2px 4px #000000;*/
-  text-shadow: 2px 2px 8px;
 }
 
 
