@@ -102,7 +102,8 @@ body, html{
   width:100%;
   text-align:center;
   /*color:#000;*/
-  color:#282e34;
+  /*color:#282e34;*/
+  color:##f4f4f4;
   /*color:#border-style: dot-dot-dash;*/
   font-size:30px;
   letter-spacing:8px;
@@ -124,9 +125,13 @@ em {
   background-image: url("../img/black-texture.jpg");
   background-position: center;
   background-size: cover;
-  
+  /*box-shadow: 10px 10px 38px -7px rgba(0,0,0,0.75);*/
+  /*box-shadow: 17px 14px 75px -2px rgba(0,0,0,0.75);*/
+  box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.75);
+  /**/
   /*background-color:#111;*/
   color:#fff;
+
   padding:20px;
 
   /*text-shadow: 4px 4px 4px #aaa;*/
@@ -184,6 +189,8 @@ em {
   /*margin-top: 50px;*/
   
   /*text-shadow: 2px 2px 8px #FF0000;*/
+  /*text-shadow: 2px 2px 4px #000000;*/
+  text-shadow: 2px 2px 8px;
 }
 
 
