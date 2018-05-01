@@ -8,6 +8,10 @@ body, html{
   /*color:#666;*/
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 
@@ -71,9 +75,9 @@ body, html{
 #section-one:before {
   content: '';
   /*border-top: 4px solid #242926;*/
-  border-top: 4px solid #242926;
+  border-top: 4px solid red;
   position: absolute;
-  top: -0.5rem;
+  top: -0.9rem;
 /*  bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;*/
