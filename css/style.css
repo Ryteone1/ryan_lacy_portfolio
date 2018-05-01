@@ -1,6 +1,6 @@
 body, html{
   height:100%;
-  margin:0;
+  /*margin:0;*/
   font-size:16px;
   font-family:"Marcellus SC", sans-serif;
   font-weight:400;
@@ -32,9 +32,9 @@ body, html{
 }
 
 .pimg2{
-  background-image:url('../img/keyboard-dark-bg.jpg');
+  background-image:url('https://media.giphy.com/media/k4VZUMuUNt0ys/giphy.gif');
   min-height:400px;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
 }
 
 .pimg3{
@@ -50,10 +50,33 @@ body, html{
   
 }
 
-.section-light{
-  background-color:#f4f4f4;
-  color:#666;
+#section-one{
+  /*background-image:url('../img/keyboard-dark-bg.jpg');*/
+  /*background: black;*/
+  /*background: #1D211E;*/
+  background: #242926;
+  position:relative;
+  /*opacity:0.70;*/
+  /*background-position:center;*/
+  /*background-size:cover;*/
+  /*background-repeat:repeat-y;*/
+  /*background-color:#666;*/
+  color:#f4f4f4;
+  /*width:100%;*/
+  /*margin: auto;*/
+  /*border-top: 4px solid red;*/
 
+}
+
+#section-one:before {
+  content: '';
+  /*border-top: 4px solid #242926;*/
+  border-top: 4px solid #242926;
+  position: absolute;
+  top: -0.5rem;
+/*  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;*/
 }
 
 .section-dark:before {
@@ -102,8 +125,8 @@ body, html{
   width:100%;
   text-align:center;
   /*color:#000;*/
-  /*color:#282e34;*/
-  color:##f4f4f4;
+  color:#282e34;
+  /*color:#f4f4f4;*/
   /*color:#border-style: dot-dot-dash;*/
   font-size:30px;
   letter-spacing:8px;
@@ -116,20 +139,47 @@ body, html{
 
 .subtitle {
   /*margin-top: 50px;*/
-  
+  font-style: normal;
   text-shadow: 2px 2px 8px #666;
   /*text-shadow: 2px 2px 4px #000000;*/
   /*text-shadow: 2px 2px 8px;*/
 }
 
-em {
+.subtitle em {
+  font-style: normal;
+}
+
+
+.border em {
   font-size: 40px;
   font-style: normal;
+  position: relative;
+}
+
+.subtitle em:hover {
+  font-style: normal;
+  position: relative;
+  top:10px;
+}
+
+/*.trigger:hover em {
+  top: 10px;
+  font-style: normal;
+}*/
+
+.em-r {
+  font-style: normal;
+}
+
+.em-r:hover {
+  top:10px;
 }
 
 
 .border{
   position: relative;
+
+  /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/black-texture.jpg");*/
   background-image: url("../img/black-texture.jpg");
   background-position: center;
   background-size: cover;
@@ -139,10 +189,11 @@ em {
   /**/
   /*background-color:#111;*/
   color:#fff;
+  /*color: red;*/
 
   padding:20px;
 
-  /*text-shadow: 4px 4px 4px #aaa;*/
+  /*text-shadow: 4px 4px 4px #aaa;
  
   /*font-weight: 100;*/
   /*font-size: 10rem;*/
@@ -157,6 +208,11 @@ em {
   margin: auto;
 
   display: block;
+}
+
+.border:hover {
+  color: #0AF535;
+
 }
 
 .border:before {
