@@ -36,9 +36,9 @@ a {
 }
 
 .pimg2{
-  background-image:url('https://media.giphy.com/media/k4VZUMuUNt0ys/giphy.gif');
+  background-image:url('../img/cool-building.jpg');
   min-height:400px;
-  /*opacity: 0.6;*/
+  opacity: 0.8;
 }
 
 .pimg3{
@@ -47,10 +47,56 @@ a {
   opacity: 0.5;
 }
 
+/* TESTING PORTFOLIO THUMBNAIL ================= */
+
+.portfolio-thumbnail {
+  width:100px;
+  height:100px;
+}
+
+.portfolio {
+  background: red;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.tester {
+  background: green;
+  /*width: 200px;*/
+  height: 200px;
+}
+
+.tester1 {
+  background-image:url('../img/dog.jpeg');
+  background-position:center;
+  background-size:cover;
+  /*background-repeat:no-repeat;*/
+  /*width: 200px;*/
+  height: 200px;
+  margin: 0px 20px;
+}
+
+.tester2 {
+  background: green;
+  /*width: 200px;*/
+  height: 200px;
+}
+
+h4 {
+  color: yellow;
+}
+
+
+/* =============================================== */
+
+
+
 
 .section{
   text-align:center;
-  padding:50px 80px;
+  padding:10px 80px;
   
 }
 
@@ -68,26 +114,27 @@ a {
   color:#f4f4f4;
   /*width:100%;*/
   /*margin: auto;*/
-  /*border-top: 4px solid red;*/
+  /*border: 4px solid red;*/
 
 }
 
 #section-one:before {
   content: '';
   /*border-top: 4px solid #242926;*/
-  border-top: 4px solid red;
+  /*border: 4px solid red;*/
   position: absolute;
-  top: -0.9rem;
-/*  bottom: -0.5rem;
+ /* top: -0.9rem;
+  bottom: -0.5rem;
   left: -0.5rem;
-  right: -0.5rem;*/
+  right: -0.5rem;
+  box-sizing: border-box;*/
 }
 
 .section-dark:before {
   position: absolute;
   /*border: 0.25rem solid #282e34;*/
   /*border-top: 0.25rem solid #ddd;*/
-  border: 4px solid red;
+  /*border: 4px solid red;*/
   /*border-bottom: 0.25rem solid #282e34;*/
   /*border-radius: 0.5rem;*/
   content: '';
@@ -111,7 +158,7 @@ a {
 }
 
 .section-three {
-  background-image: url("../img/atom.gif");
+  background-image: url("../img/black-texture-small.jpeg");
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -141,6 +188,10 @@ a {
 
 }
 
+.ptext a {
+  text-decoration: none;
+}
+
 .subtitle {
   /*margin-top: 50px;*/
   font-style: normal;
@@ -154,33 +205,38 @@ a {
 }
 
 
-.border em {
+.border-one em {
   font-size: 40px;
   font-style: normal;
   position: relative;
 }
 
-.subtitle em:hover {
+
+/* ======"Front End Developer Subtitle hover effect" ======= */
+
+/*.subtitle em:hover {
   font-style: normal;
   position: relative;
   top:10px;
-}
+}*/
 
 /*.trigger:hover em {
   top: 10px;
   font-style: normal;
 }*/
 
-.em-r {
+/*.em-r {
   font-style: normal;
 }
 
 .em-r:hover {
   top:10px;
-}
+}*/
+
+/* ============================================================= */
 
 
-.border{
+.border-one {
   position: relative;
 
   /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/black-texture.jpg");*/
@@ -208,18 +264,19 @@ a {
   animation-timing-function: ease-in-out;
   animation-direction: forwards;
   /*border: solid purple 8px;*/
-  width: 20%;
+  width: 25%;
   margin: auto;
 
   display: block;
 }
 
-.border:hover {
+.border-one:hover {
   color: #0AF535;
+  text-decoration: none;
 
 }
 
-.border:before {
+.border-one:before {
   border: 0.2rem solid transparent; 
   border-image-source: url("../img/black-texture.jpg");
   border-image-repeat: repeat;
@@ -253,7 +310,7 @@ a {
 }
 
 
-.ptext .border.trans{
+.ptext .border-one.trans{
   background-color:transparent;
 }
 
@@ -263,6 +320,10 @@ a {
   }
 }
 
+
+
+
+/* ==== CODE TO REPLICATE SECTION FROM COFFEE TEMPLATE === */
 
 .page-section {
   margin-top: 5rem;
@@ -279,8 +340,8 @@ a {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  /*background-color: rgba(255, 255, 255, 0.85);*/
-  background-image: url("../img/black-texture.jpg");
+  background-color: rgba(255, 255, 255, 0.85);
+  /*background-image: url("../img/black-texture.jpg");*/
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -315,3 +376,5 @@ a {
   color: #ddd;
   font-family: 'Lora';
 }
+
+/* =========================================================== */
