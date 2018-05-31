@@ -198,6 +198,7 @@ h4 {
   text-shadow: 2px 2px 8px #666;
   /*text-shadow: 2px 2px 4px #000000;*/
   /*text-shadow: 2px 2px 8px;*/
+
 }
 
 .subtitle em {
@@ -238,6 +239,8 @@ h4 {
 
 .border-one {
   position: relative;
+  width: 25%;
+  margin: auto;
 
   /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/black-texture.jpg");*/
   background-image: url("../img/black-texture.jpg");
@@ -264,8 +267,7 @@ h4 {
   animation-timing-function: ease-in-out;
   animation-direction: forwards;
   /*border: solid purple 8px;*/
-  width: 25%;
-  margin: auto;
+ 
 
   display: block;
 }
@@ -314,10 +316,20 @@ h4 {
   background-color:transparent;
 }
 
+
+
+
 @media only screen and (max-width:568px){
+
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
+
+  .border-one {
+    width: 60%;
+  }
+
+
 }
 
 
