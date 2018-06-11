@@ -130,10 +130,6 @@ a {
   }
 }
 
-/*.ptext .border-one.trans{
-  background-color:transparent;
-}*/
-
 
 /*  FRONT END DEVELOPER SUBTITLE ======================== */
 
@@ -197,6 +193,46 @@ a {
   /*margin: auto;*/
   /*border: 4px solid red;*/
 }
+
+
+.thumbnail {
+  width: 440px;
+  height: 250px;
+}
+
+#thumbnail-1 {
+  background-image: url("../img/Amigos-screenshot1.gif");
+  background-size: 100% 100%;
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  position: relative;
+  /*left: 80px;*/
+  bottom: 150px;
+  float: left;
+  /*margin: 30px;*/
+  /*left: 100px;*/
+  margin-left: 115px;
+}
+
+#thumbnail-2 {
+  background-image: url("../img/Amigos-screenshot1.gif");
+  background-size: 100% 100%;
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  position: relative;
+  bottom: 150px;
+  float: left;
+  /*margin: 30px;*/
+  /*left: 250px;*/
+  margin-left: 115px;
+}
+
+/*#thumbnail-3 {
+  background-image: url("../img/Amigos-screenshot1.gif");
+  background-size: 100% 100%;
+  position: relative;
+  bottom: 150px;
+}*/
 
 
 /* TESTING PORTFOLIO THUMBNAIL ================= */
