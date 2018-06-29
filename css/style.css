@@ -31,6 +31,7 @@ a {
   background-image:url('../img/cool-building.jpg');
   min-height:400px;
   opacity: 0.8;
+  /*position: relative;*/
 }
 
 .pimg3{
@@ -41,7 +42,7 @@ a {
 
 
 .ptext{
-  position:absolute;
+  position: absolute;
   top:50%;
   width:100%;
   text-align:center;
@@ -182,7 +183,7 @@ a {
   /*background: #1D211E;*/
   background: #242926;
   /*background: rgba(0, 0, 0, 0.74);  */
-  position:relative;
+  /*position:relative;*/
   /*opacity:0.70;*/
   /*background-position:center;*/
   /*background-size:cover;*/
@@ -195,36 +196,48 @@ a {
 }
 
 
+.thumbnails {
+  /*position: relative;*/
+}
+
+
 .thumbnail {
   width: 440px;
   height: 250px;
+  /*position: absolute;*/
 }
+
+/*.clearfix::after {
+    content: "";
+    clear: both;
+}*/
+
 
 #thumbnail-1 {
   background-image: url("../img/Amigos-screenshot1.gif");
   background-size: 100% 100%;
   /*background-position: center;*/
   /*background-size: cover;*/
-  position: relative;
   /*left: 80px;*/
-  bottom: 150px;
-  float: left;
+  /*bottom: 150px;*/
+  /*float: left;*/
   /*margin: 30px;*/
   /*left: 100px;*/
-  margin-left: 115px;
+  /*margin-left: 115px;*/
+  /*opacity: 1;*/
 }
 
 #thumbnail-2 {
-  background-image: url("../img/Amigos-screenshot1.gif");
+  background-image: url("../img/Ryte-car-screenshot.gif");
   background-size: 100% 100%;
   /*background-position: center;*/
   /*background-size: cover;*/
-  position: relative;
-  bottom: 150px;
-  float: left;
+  /*bottom: 150px;*/
+  /*float: left;*/
   /*margin: 30px;*/
   /*left: 250px;*/
-  margin-left: 115px;
+  /*margin-left: 115px;*/
+  /*opacity: 1;*/
 }
 
 /*#thumbnail-3 {
@@ -233,6 +246,16 @@ a {
   position: relative;
   bottom: 150px;
 }*/
+
+#thumbnail-3 {
+  background-image: url("../img/airplane.jpeg");
+}
+
+
+#thumbnail-4 {
+  background-image: url("../img/black-leather.jpg");
+}
+
 
 
 /* TESTING PORTFOLIO THUMBNAIL ================= */
@@ -287,7 +310,7 @@ h4 {
   background-repeat:no-repeat;*/
   background-color:#282e34;
   color:#ddd;
-  position: relative; 
+  /*position: relative; */
 }
 
 .section-three {
@@ -297,7 +320,7 @@ h4 {
   background-repeat:no-repeat;
   /*background-color:#282e34;*/
   color:#ddd;
-  position: relative; 
+  /*position: relative; */
   height: 300px;
 }
 
@@ -305,14 +328,25 @@ h4 {
 
 /*  MEDIA QUERIES ======================================  */
 
-@media only screen and (max-width:568px){
+@media only screen and (max-width:768px){
 
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
 
-  .border-one {
+  .textured-namebanner {
     width: 60%;
+    padding: 10px;
+  }
+
+  .ptext {
+    /*font-size: 18px;*/
+    font-size: 1em;
+  }
+
+  .textured-namebanner em {
+    /*font-size: 25px;*/
+    font-size: 1.25em;
   }
 
 
