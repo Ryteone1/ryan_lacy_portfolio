@@ -43,6 +43,7 @@ a {
 
 .ptext{
   position: absolute;
+  /*position: relative;*/
   top:50%;
   width:100%;
   text-align:center;
@@ -93,7 +94,7 @@ a {
 .textured-namebanner em {
   font-size: 40px;
   font-style: normal;
-  position: relative;
+  /*position: relative;*/
 }
 
 .textured-namebanner:hover {
@@ -183,7 +184,7 @@ a {
   /*background: #1D211E;*/
   background: #242926;
   /*background: rgba(0, 0, 0, 0.74);  */
-  /*position:relative;*/
+  /*position: relative;*/
   /*opacity:0.70;*/
   /*background-position:center;*/
   /*background-size:cover;*/
@@ -204,7 +205,8 @@ a {
 .thumbnail {
   width: 440px;
   height: 250px;
-  /*position: absolute;*/
+  position: relative;
+  left:300px;
 }
 
 /*.clearfix::after {
@@ -220,11 +222,11 @@ a {
   /*background-size: cover;*/
   /*left: 80px;*/
   /*bottom: 150px;*/
-  /*float: left;*/
   /*margin: 30px;*/
   /*left: 100px;*/
   /*margin-left: 115px;*/
   /*opacity: 1;*/
+  /*float: left;*/
 }
 
 #thumbnail-2 {
@@ -257,53 +259,7 @@ a {
 }
 
 
-
-/* TESTING PORTFOLIO THUMBNAIL ================= */
-
-.portfolio-thumbnail {
-  width:100px;
-  height:100px;
-}
-
-.portfolio {
-  background: red;
-}
-
-.border-box {
-  box-sizing: border-box;
-}
-
-.tester {
-  background: green;
-  /*width: 200px;*/
-  height: 200px;
-}
-
-.tester1 {
-  background-image:url('../img/dog.jpeg');
-  background-position:center;
-  background-size:cover;
-  /*background-repeat:no-repeat;*/
-  /*width: 200px;*/
-  height: 200px;
-  margin: 0px 20px;
-}
-
-.tester2 {
-  background: green;
-  /*width: 200px;*/
-  height: 200px;
-}
-
-h4 {
-  color: yellow;
-}
-
-/* =============================================== */
-
-
-
-.section-two {
+.section-dark {
   /*background-image: url("../img/black-texture.jpg");
   background-position:center;
   background-size:cover;
@@ -312,18 +268,6 @@ h4 {
   color:#ddd;
   /*position: relative; */
 }
-
-.section-three {
-  background-image: url("../img/black-texture-small.jpeg");
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  /*background-color:#282e34;*/
-  color:#ddd;
-  /*position: relative; */
-  height: 300px;
-}
-
 
 
 /*  MEDIA QUERIES ======================================  */
