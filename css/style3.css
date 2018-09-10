@@ -1,4 +1,4 @@
-html{
+html {
   font-size: 10px;
 }
 
@@ -27,21 +27,30 @@ a {
 }
 
 .pimg1{
-  background-image:url('../img/light-header-bg.png');
-  min-height:100%;
+  background-image:url('../img/light-header-bg.png'); 
+    /*background-image:url('https://media.giphy.com/media/SQgbkziuGrNxS/giphy.gif'); */
+  min-height:100vh;
+}
+
+#snailgif {
+  display:none;
 }
 
 .pimg2{
   background-image:url('../img/cool-building.jpg');
-  min-height:400px;
-  opacity: 0.8;
+  min-height:40vh;
+  /*opacity: 0.8;*/
   /*position: relative;*/
 }
 
 .pimg3{
-  background-image:url('../img/dog.jpeg');
-  min-height:500px;
-  opacity: 0.5;
+  /*background-image:url('../img/dog.jpeg');*/
+  /*background-image:url('https://media.giphy.com/media/6K6szMXeC2fqE/giphy.gif');*/
+  background-image:url('https://media.giphy.com/media/5UCieYmJFW2rzcHkab/giphy.gif');
+  /*background-image:url('https://media.giphy.com/media/6K6szMXeC2fqE/giphy.gif');*/
+  /*background-size: 100% 100%;*/
+  min-height:50vh;
+  /*opacity: 0.9;*/
 }
 
 
@@ -55,21 +64,37 @@ a {
   color:#282e34;
   /*color:#f4f4f4;*/
   /*color:#border-style: dot-dot-dash;*/
-  /*font-size:30px;*/
-  font-size: 3rem;
+  font-size:3rem;
   letter-spacing:8px;
   text-transform:uppercase;
   perspective: 500px;
   -webkit-perspective: 500px;
 }
 
+.ptext2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
 .ptext a {
   text-decoration: none;
+}
+
+.ptext2 .banner {
+  position: relative;
+  /*position: absolute;*/
+  display: block;
+  border: 8px solid red;
+  width: 25%;
+  margin: auto;
 }
 
 
 .textured-namebanner {
   position: relative;
+  /*position: absolute;*/
   width: 25%;
   margin: auto;
   /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/black-texture.jpg");*/
@@ -82,8 +107,7 @@ a {
   /*background-color:#111;*/
   color:#fff;
   /*color: red;*/
-  /*padding:20px;*/
-  padding: 2rem;
+  padding:2rem;
   /*text-shadow: 4px 4px 4px #aaa 
   /*font-weight: 100;*/
   /*font-size: 10rem;*/
@@ -98,7 +122,6 @@ a {
 }
 
 .textured-namebanner em {
-  /*font-size: 40px;*/
   font-size: 4rem;
   font-style: normal;
   /*position: relative;*/
@@ -182,9 +205,8 @@ a {
 
 .section{
   text-align:center;
-  /*padding:10px 80px;  */
+  padding:1rem 8rem;  
   font-size: 1.6rem;
-  padding: 1rem 8rem;
 }
 
 #section-one{
@@ -192,7 +214,6 @@ a {
   /*background: black;*/
   /*background: #1D211E;*/
   /*background: #242926;*/
-
   background: rgba(36, 41, 38, 1);
   /*background: rgba(0, 0, 0, 0.74);  */
   /*position: relative;*/
@@ -208,22 +229,146 @@ a {
 }
 
 
-.thumbnails {
-  /*position: relative;*/
+
+
+.wrapper {
+    /*position: relative;*/
+    display: grid;
+    /*grid-template-columns: 450px 450px;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));*/
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    /*grid-template-rows: 253px 253px 253px;*/
+    grid-gap: 30px;
+    /*left: 50px;*/
 }
 
+
+
+.image-size {
+  object-fit: cover;
+  width: 100%;
+  height: 253px;
+}
+.a1 {
+  background-color: grey;
+}
+
+
+.a2 {
+  background-color: purple;
+}
+
+.a3 {
+  /*background-color: green;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;*/
+}
+
+.a4 {
+  background-color: red;
+}
+
+.a5 {
+  background-color: blue;
+}
+
+.a6 {
+  background-color: yellow;
+}
+
+
+
+
+.pic1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.pic2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.pic3 {
+/*  background-image: url("../img/airplane.jpeg");
+  background-size: 100% 100%;*/
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.thumbnails {
+  position: relative;
+  /*width: 440px;*/
+  /*height: 250px;*/
+  /*overflow: hidden;*/
+}
+
+
+.container{
+  position: relative;
+  /*position: absolute;*/
+  /*left: 300px;*/
+  width: 440px;
+  /*height: auto;*/
+  margin: 30px;
+  /*padding-top: 56.25%; */
+  /*padding-top: 100%;*/
+}
+
+.container1 {
+  float: left;
+  left:50px;
+}
+
+
+.container2 {
+  float: right;
+  right: 50px;
+}
+
+
+.container3{
+  float: left;
+  left: 50px;
+}
+
+
+.container4 {
+  float: right;
+  right: 50px;
+}
 
 .thumbnail {
-  width: 440px;
-  height: 250px;
-  position: relative;
-  left:300px;
+  /*width: 440px;*/
+  /*height: 250px;*/
+  /*position: relative;*/
+  /*position: absolute;*/
+  /*left:300px;*/
+
+  width: 100%;
+  /*height: auto;*/
+  /*width: 440px;*/
+  padding-top: 56.25%;
 }
 
-/*.clearfix::after {
+.clearfix::after {
     content: "";
     clear: both;
-}*/
+    display: table;
+}
+
+
+.responsive {
+    width: 100%;
+    /*max-width: 400px;*/
+    /*height: auto;*/
+}
 
 
 #thumbnail-1 {
@@ -246,11 +391,11 @@ a {
   /*background-position: center;*/
   /*background-size: cover;*/
   /*bottom: 150px;*/
-  /*float: left;*/
+  /*float: right;*/
   /*margin: 30px;*/
   /*left: 250px;*/
   /*margin-left: 115px;*/
-  /*opacity: 1;*/
+  /*opacity: 0.5;*/
 }
 
 /*#thumbnail-3 {
@@ -262,11 +407,13 @@ a {
 
 #thumbnail-3 {
   background-image: url("../img/airplane.jpeg");
+  /*clear: both;*/
 }
 
 
 #thumbnail-4 {
-  background-image: url("../img/black-leather.jpg");
+  background-image: url("../img/Ryte-car-screenshot.gif");
+  background-size: 100% 100%;
 }
 
 

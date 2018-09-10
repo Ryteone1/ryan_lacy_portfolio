@@ -1,0 +1,118 @@
+body, html {
+	height: 100%;
+	/*width: 100%;*/
+	margin: 0;
+}
+
+
+.pimg1, .pimg2, .pimg3 {
+	/*height: 400px;*/
+	position: relative;
+	/*min-height: 100%*/
+	/*height: 100%;*/
+	/*width: 100%;*/
+	/*left: 50px;*/
+
+	background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  background-attachment: fixed;
+}
+
+
+.pimg1 {
+	background-image: url("../img/light-header-bg.png");
+	min-height: 100%;
+}
+
+.pimg2 {
+	background-image:url('../img/cool-building.jpg');
+	min-height: 400px;
+}
+
+.pimg3 {
+	background-image:url('../img/dog.jpeg');
+	min-height: 500px;
+}
+
+.section1 {
+	background: #242926;
+	color: #f4f4f4;
+	text-align: center;
+	padding: 10px 80px;
+}
+
+body, html {
+	box-sizing: border-box;
+}
+
+
+
+
+.container1 {
+	width: 40vw;
+	height: 200px;
+	background: green;
+	/*position: relative;*/
+	/*z-index: 1*/
+	/*float: left;*/
+	/*overflow: hidden;*/
+	/*box-sizing: border-box;*/
+}
+
+.container2 {
+	background: blue;
+	/*position: relative;*/
+	height: 200px;
+	width: 60vw;
+	/*float: right;*/
+	/*clear: left;*/
+}
+
+.container3 {
+	height: 200px;
+	background: yellow;
+	width: 40vw;
+}
+
+.container4 {
+	min-height: 200px;
+	background: purple;
+	width: 40vw;
+	float: left;
+	z-index: 10;
+	position: relative;
+}
+
+.box1, .box2, .box3, .box4 {
+  background: red;
+  height: 20px;
+  width: 40%;
+  /*padding: 10px;*/
+  
+  margin: 20px 20px 0 20px;
+  /*z-index: -1;*/
+  float: left;
+}
+
+/*.box1 {
+	float: left;
+}
+
+.box2 {
+	float: left;
+}*/
+
+.clearfix {
+	content: "";
+	clear: both;
+}
+
+/*.box3 {
+	float: left;
+}
+
+.box4 {
+	float: left;
+}*/

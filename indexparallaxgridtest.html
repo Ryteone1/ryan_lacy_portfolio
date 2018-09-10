@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Ryan Lacy Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">   -->
+
+  <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style3.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+  // $(document).ready(function myFunction() {
+  //     var x = document.getElementById("snailgif");
+  //       if (x.style.display === "none") {
+  //           x.style.display = "block";
+  //       } else {
+  //           x.style.display = "none";
+  //       }
+      
+
+  // });
+
+
+    // CALLBACK FUNCTIONS NOT WORKING -------------------------------
+
+    // $(document).ready(function() {      
+
+    //     $("a").on("click", function snail(smoothscroll) {
+
+    //     function snail(callback) {
+
+    //         var x = document.getElementById("snailgif");
+    //         if (x.style.display === "none") {
+    //             x.style.display = "block";
+    //         } else {
+    //             x.style.display = "none";
+    //         };
+
+    //         callback();
+    //      }    
+
+      
+    //   function smoothscroll(event) {
+
+    //     $(document).ready(function() {
+    //         // Make sure this.hash has a value before overriding default behavior
+    //         if (this.hash !== "") {
+    //           // Prevent default anchor click behavior
+    //           event.preventDefault();
+
+    //           // Store hash
+    //           var hash = this.hash;
+
+    //           // Using jQuery's animate() method to add smooth page scroll
+    //           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    //           $('html, body').animate({
+    //             scrollTop: $(hash).offset().top
+    //           }, 1000, function(){
+           
+    //             // Add hash (#) to URL when done scrolling (default click behavior)
+    //             window.location.hash = hash;
+    //           });
+    //         } // End if
+
+    //     });          
+    //  }; 
+    // });
+    //     });
+  
+  
+// ORIGINAL SMOOTH SCROLLING CODE -----------------------------
+
+ function snailgif(){
+       var x = document.getElementById("snailgif");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        };      
+
+
+        smoothscroll();
+      };
+
+
+function smoothscroll() {
+
+      // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  };
+
+
+$(document).ready(function(){
+
+ 
+  
+
+});
+
+     
+  </script>
+
+</head>
+
+<body>
+
+  <!-- <div class="container"> -->
+<!-- 
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div> -->
+
+  <!-- <div class="wrapper"> -->
+    
+      <div class="pimg1 section parallax bg1">
+        <div class="ptext">
+          <img src='https://media.giphy.com/media/SQgbkziuGrNxS/giphy.gif' id="snailgif">
+
+          <a href="#section-one" onclick="snailgif()">
+          <span class="textured-namebanner"><em>R</em>yan <em>L</em>acy</span>  
+          </a>    
+        
+          <div class="trigger">
+            <h6 class="subtitle">Front  End  Web  Developer
+             <!--  <em>F</em>
+              <em class="em-r">r</em>
+              <em class="em-o">o</em>
+              <em class="em-n">n</em> 
+              <em class="em-t">t</em>
+              <em class="em-e">   E</em>
+              <em class="em-n2">n</em> 
+              <em class="em-d">d</em>
+              <em class="em-w">   W</em>
+              <em class="em-e2">e</em>
+              <em class="em-b">b</em> 
+              <em class="em-d2">   D</em>
+              <em class="em-e3">e</em>
+              <em class="em-v">v</em>
+              <em class="em-e4">e</em>
+              <em class="em-l">l</em> 
+              <em class="em-o2">o</em>
+              <em class="em-p">p</em>
+              <em class="em-e5">e</em> 
+              <em class="em-r2">r</em>     -->    
+            </h6>
+          </div>
+
+        </div>
+      </div>
+    
+
+
+  <!--   <section class="page-section cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 mx-auto">
+              <div class="cta-inner text-center rounded">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Our Promise</span>
+                  <span class="section-heading-lower">To You</span>
+                </h2>
+                <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+              </div>            
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+
+
+    <section class="section" id="section-one">
+      <h2>Welcome To My Page!</h2>
+      <p>
+       Hi I am Ryan!
+       I am passionate about building beautiful web applications!
+      </p>
+
+
+        <div class="a1">1</div>
+        <!-- <div class="ab1"></div> -->
+        <div class="a2">2</div>
+        <div class="a3">
+          <img class="image-size" src="img/amigos-screenshot1.gif" alt="amigos">
+        </div>
+        <div class="a4">4</div>
+        <div class="a5">5</div>
+        <div class="a6">6</div>
+      
+
+      
+        <div class="pic1">
+          <img src="img/amigos-screenshot1.gif" alt="amigos">
+        </div>
+
+         <div class="pic2">
+          <img src="img/ryte-car-screenshot.gif" alt="amigos">
+        </div>
+
+         <div class="pic3">
+          <img src="img/airplane.jpeg" alt="amigos">
+        </div>
+
+         <div class="pic4">
+          <img src="img/black-texture.jpg" alt="amigos">
+        </div>
+      
+
+      
+<!-- 
+      <div class="thumbnails clearfix"> 
+
+        <div class="container container1">
+          <a href="https://powerful-plains-53585.herokuapp.com/" target="_blank">
+            <div class="thumbnail">
+              <img src="img/amigos-screenshot1.gif" class="responsive" alt="amigos page">
+            </div>
+          </a>
+        </div>
+
+        <div class="container container2">
+          <div class="thumbnail" id="thumbnail-2"></div>
+        </div>
+
+        <div class="container container3">
+          <div class="thumbnail" id="thumbnail-3"></div>
+        </div>
+
+        <div class="container container4">
+          <div class="thumbnail" id="thumbnail-4"></div>
+        </div> -->
+
+        <!-- <div class="clearfix"></div> -->
+      <!-- </div> -->
+
+      
+    </section>
+
+
+    <div class="pimg2">
+      <div class="thumbnails clearfix"> 
+
+        <div class="container container1">
+          <a href="https://powerful-plains-53585.herokuapp.com/" target="_blank">
+            <div class="thumbnail" id="thumbnail-1"></div>
+          </a>
+        </div>
+
+        <div class="container container2">
+          <div class="thumbnail" id="thumbnail-2"></div>
+        </div>
+
+        <div class="container container3">
+          <div class="thumbnail" id="thumbnail-3"></div>
+        </div>
+
+        <div class="container container4">
+          <div class="thumbnail" id="thumbnail-4"></div>
+        </div>
+
+        <!-- <div class="clearfix"></div> -->
+      </div>
+    </div>
+
+
+    <section class="section section-dark">
+      <h2>Section Two</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. 
+      </p>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <!-- <span class="textured-namebanner">
+          Image Three Text -->
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>Section Three</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+      </p>
+    </section>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="textured-namebanner">
+          Ryan Lacy
+        </span>
+      </div>
+    </div>
+
+
+  <!-- </div> END OF WRAPPER  -->
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+  
+</body>
+</html>
