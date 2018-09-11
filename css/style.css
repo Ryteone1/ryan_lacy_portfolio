@@ -256,18 +256,20 @@ a {
 
 
 #thumbnail-1 {
-  background-image: url("../img/Amigos-screenshot1.gif");
+  /*background-image: url("../img/Amigos-screenshot1.gif");*/
+  background-image: url("../img/cool-building.jpg");
   background-size: 100% 100%;
 }
 
 #thumbnail-2 {
-  background-image: url("../img/Ryte-car-screenshot.gif");
+  /*background-image: url("../img/Ryte-car-screenshot.gif");*/
+  background-image: url("../img/keyboard-dark-bg.jpg");
   background-size: 100% 100%;
 }
 
 
 #thumbnail-3 {
-  background-image: url("../img/airplane.jpeg");
+  background-image: url("../img/floating-up-bg.gif");
   background-size: 100% 100%;
 }
 
