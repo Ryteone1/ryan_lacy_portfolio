@@ -151,6 +151,7 @@ a {
 .subtitle {
   /*margin-top: 50px;*/
   font-style: normal;
+  font-size: 1.6vw;
   color: #242926;
   /*text-shadow: 2px 2px 8px #666;*/
   text-shadow: .2rem .2rem .8rem #666;
@@ -217,10 +218,19 @@ a {
 
 .thumbnails {
   /*position: relative;*/
+
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /*grid-template-columns: 1fr 1fr;*/
+  /*grid-template-rows: 1fr;*/
+
+/*  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px;*/
 }
 
 .container {
-  width: 35vw;
+  /*width: 35vw;*/
 }
 
 
@@ -231,7 +241,7 @@ a {
 
   width: 100%;
   padding-top: 56.25%;
-  left:100px;
+  
 
 /*  width: 44rem;
   height: 25rem; 
