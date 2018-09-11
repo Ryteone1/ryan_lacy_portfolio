@@ -57,7 +57,8 @@ a {
   /*color:#border-style: dot-dot-dash;*/
   /*font-size:30px;*/
   font-size: 3rem;
-  letter-spacing:8px;
+  /*letter-spacing:8px;*/
+  letter-spacing: .8rem;
   text-transform:uppercase;
   perspective: 500px;
   -webkit-perspective: 500px;
@@ -70,15 +71,19 @@ a {
 
 .textured-namebanner {
   position: relative;
-  width: 25%;
+  /*width: 25%;*/
+  width: 25vw;
   margin: auto;
+  font-size: 4rem;
+  font-size: 2.5vw;
   /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/black-texture.jpg");*/
   background-image: url("../img/black-texture.jpg");
   background-position: center;
   background-size: cover;
   /*box-shadow: 10px 10px 38px -7px rgba(0,0,0,0.75);*/
   /*box-shadow: 17px 14px 75px -2px rgba(0,0,0,0.75);*/
-  box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.75);
+  /*box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.75);*/
+  box-shadow: .8rem .8rem 4rem 0rem rgba(0,0,0,0.75);
   /*background-color:#111;*/
   color:#fff;
   /*color: red;*/
@@ -100,8 +105,9 @@ a {
 .textured-namebanner em {
   /*font-size: 40px;*/
   font-size: 4rem;
+  font-size: 2.5vw;
   font-style: normal;
-  /*position: relative;*/
+  position: relative;
 }
 
 .textured-namebanner:hover {
@@ -145,8 +151,10 @@ a {
 .subtitle {
   /*margin-top: 50px;*/
   font-style: normal;
+  font-size: 1.6vw;
   color: #242926;
-  text-shadow: 2px 2px 8px #666;
+  /*text-shadow: 2px 2px 8px #666;*/
+  text-shadow: .2rem .2rem .8rem #666;
   /*text-shadow: 2px 2px 4px #000000;*/
   /*text-shadow: 2px 2px 8px;*/
 }
@@ -210,14 +218,35 @@ a {
 
 .thumbnails {
   /*position: relative;*/
+
+  display: grid;
+  grid-gap: 60px;
+  /*grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-rows: 1fr;*/
+
+/*  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px;*/
+}
+
+.container {
+  /*width: 35vw;*/
 }
 
 
 .thumbnail {
-  width: 440px;
-  height: 250px;
   position: relative;
-  left:300px;
+  /*width: 440px;
+  height: 250px;*/
+
+  width: 100%;
+  padding-top: 56.25%;
+  
+
+/*  width: 44rem;
+  height: 25rem; 
+  left:10rem;*/
+  
 }
 
 /*.clearfix::after {
@@ -262,11 +291,13 @@ a {
 
 #thumbnail-3 {
   background-image: url("../img/airplane.jpeg");
+  background-size: 100% 100%;
 }
 
 
 #thumbnail-4 {
   background-image: url("../img/black-leather.jpg");
+  background-size: 100% 100%;
 }
 
 
@@ -289,20 +320,20 @@ a {
     background-attachment:scroll;
   }
 
-  .textured-namebanner {
+  /*.textured-namebanner {
     width: 60%;
     padding: 10px;
-  }
+  }*/
 
-  .ptext {
-    /*font-size: 18px;*/
+  /*.ptext {
+    font-size: 18px;
     font-size: 1em;
-  }
+  }*/
 
-  .textured-namebanner em {
-    /*font-size: 25px;*/
+/*  .textured-namebanner em {
+    font-size: 25px;
     font-size: 1.25em;
-  }
+  }*/
 
 
 }
@@ -310,7 +341,7 @@ a {
 
 
 
-/* ==== CODE TO REPLICATE SECTION FROM COFFEE TEMPLATE === */
+/* ==== CODE TO REPLICATE SECTION FROM COFFEE TEMPLATE === 
 
 .page-section {
   margin-top: 5rem;
