@@ -224,10 +224,10 @@ a {
   /*margin-left: 1vw;*/
   /*margin-right: 1vw;*/
 
-  margin-left: 0;
+  /*margin-left: 0;
   margin-right: 0;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 0;*/
 
   /*grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
   grid-template-columns: 1fr 1fr;
@@ -241,20 +241,15 @@ a {
   /*width: 35vw;*/
 }
 
+.container1 {
+  width: 440px;
+}
+
 
 .thumbnail {
   /*position: relative;*/
-  /*width: 440px;
-  height: 250px;*/
-
   width: 100%;
-  padding-top: 56.25%;
-  
-
-/*  width: 44rem;
-  height: 25rem; 
-  left:10rem;*/
-  
+  padding-top: 56.25%;  
 }
 
 /*.clearfix::after {
