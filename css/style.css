@@ -264,14 +264,14 @@ a {
 
 
 #thumbnail-1 {
-  /*background-image: url("../img/amigos-screenshot3.jpg");*/
-  background-image: url("../img/cool-building.jpg");
+  background-image: url("../img/amigos-screenshot3.jpg");
+  /*background-image: url("../img/cool-building.jpg");*/
   background-size: 100% 100%;
 }
 
 #thumbnail-2 {
-  /*background-image: url("../img/Ryte-car-screenshot3.jpg");*/
-  background-image: url("../img/keyboard-dark-bg.jpg");
+  background-image: url("../img/Ryte-car-screenshot3.jpg");
+  /*background-image: url("../img/keyboard-dark-bg.jpg");*/
   background-size: 100% 100%;
 }
 
