@@ -220,7 +220,15 @@ a {
   /*position: relative;*/
 
   display: grid;
-  grid-gap: 60px;
+  grid-gap: 4vw;
+  /*margin-left: 1vw;*/
+  /*margin-right: 1vw;*/
+
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
   /*grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
   grid-template-columns: 1fr 1fr;
   /*grid-template-rows: 1fr;*/
@@ -256,14 +264,14 @@ a {
 
 
 #thumbnail-1 {
-  background-image: url("../img/amigos-screenshot3.jpg");
-  /*background-image: url("../img/cool-building.jpg");*/
+  /*background-image: url("../img/amigos-screenshot3.jpg");*/
+  background-image: url("../img/cool-building.jpg");
   background-size: 100% 100%;
 }
 
 #thumbnail-2 {
-  background-image: url("../img/Ryte-car-screenshot3.jpg");
-  /*background-image: url("../img/keyboard-dark-bg.jpg");*/
+  /*background-image: url("../img/Ryte-car-screenshot3.jpg");*/
+  background-image: url("../img/keyboard-dark-bg.jpg");
   background-size: 100% 100%;
 }
 
@@ -278,6 +286,32 @@ a {
 #thumbnail-4 {
   /*background-image: url("../img/Ryte-car-screenshot3.png");*/
   background-image: url("../img/black-texture.jpg");
+  background-size: 100% 100%;
+}
+
+#thumbnail-5 {
+  background-image: url("../img/amigos-screenshot3.jpg");
+  /*background-image: url("../img/cool-building.jpg");*/
+  background-size: 100% 100%;
+}
+
+#thumbnail-6 {
+  background-image: url("../img/Ryte-car-screenshot3.jpg");
+  /*background-image: url("../img/keyboard-dark-bg.jpg");*/
+  background-size: 100% 100%;
+}
+
+
+#thumbnail-7 {
+  /*background-image: url("../img/airplane.jpeg");*/
+  background-image: url("../img/amigos-screenshot3.png");
+  background-size: 100% 100%;
+}
+
+
+#thumbnail-8 {
+  background-image: url("../img/Ryte-car-screenshot3.png");
+  /*background-image: url("../img/black-texture.jpg");*/
   background-size: 100% 100%;
 }
 
