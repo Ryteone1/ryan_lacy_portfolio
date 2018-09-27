@@ -121,8 +121,9 @@ a {
 
 .textured-namebanner:before {
   border: 0.2rem solid transparent; 
+  /*border: 0.2rem solid; */
   border-image-source: url("../img/black-texture.jpg");
-  /*border-image-repeat: repeat;*/
+  border-image-repeat: repeat;
   border-image-slice: 8;
   border-image-outset: 1;  
   /*border-radius: 0.5rem;*/
@@ -332,6 +333,11 @@ a {
     font-size: 25px;
     font-size: 1.25em;
   }*/
+
+  .textured-namebanner:before {
+  /*border: 0.2rem solid transparent; */
+  border-image-outset: 2;
+}
 
 
 }
