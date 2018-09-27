@@ -122,7 +122,7 @@ a {
 .textured-namebanner:before {
   border: 0.2rem solid transparent; 
   border-image-source: url("../img/black-texture.jpg");
-  border-image-repeat: repeat;
+  /*border-image-repeat: repeat;*/
   border-image-slice: 8;
   border-image-outset: 1;  
   /*border-radius: 0.5rem;*/
