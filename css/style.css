@@ -7,6 +7,7 @@ body, html{
   margin:0;
   /*font-size:16px;*/
   font-family:"Marcellus SC", sans-serif;
+  /*font-family: 'Lato', 'Arial', sans-serif;*/
   font-weight:400;
   line-height:1.8em;
   /*color:#666;*/
@@ -227,12 +228,16 @@ a {
   /*border: 4px solid red;*/
 }
 
+.portfolio_intro {
+  margin-bottom: 10vh;
+}
 
 .thumbnails {
   /*position: relative;*/
 
   display: grid;
   grid-gap: 4vw;
+  grid-gap-top: 50px;
 
   /*grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
   grid-template-columns: 1fr 1fr;
@@ -240,14 +245,6 @@ a {
 
 /*  grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px 200px 200px;*/
-}
-
-.container {
-  /*width: 35vw;*/
-}
-
-.container1 {
-  width: 440px;
 }
 
 
@@ -266,27 +263,35 @@ a {
 #thumbnail-1 {
   background-image: url("../img/amigos-screenshot3.JPG");
   /*background-image: url("../img/cool-building.jpg");*/
+  background-repeat: no-repeat;
+  background-position: cover;
   background-size: 100% 100%;
+  /*background-attachment: fixed;*/
+  /*height: 100px;*/
+  /*height: 5vh;*/
 }
 
 #thumbnail-2 {
-  background-image: url("../img/Ryte-car-screenshot3.JPG");
+  background: url("../img/Ryte-car-screenshot3.JPG");
   /*background-image: url("../img/keyboard-dark-bg.jpg");*/
   background-size: 100% 100%;
+  /*background-attachment: fixed;*/
 }
 
 
 #thumbnail-3 {
-  background-image: url("../img/airplane.jpeg");
+  background-image: url("../img/crystal_collector_snapshot.jpg");
   /*background-image: url("../img/amigos-screenshot3.png");*/
   background-size: 100% 100%;
+  /*background-attachment: fixed;*/
 }
 
 
 #thumbnail-4 {
   /*background-image: url("../img/Ryte-car-screenshot3.png");*/
-  background-image: url("../img/black-texture.jpg");
+  background-image: url("../img/bamazon1.gif");
   background-size: 100% 100%;
+  /*background-attachment: fixed;*/
 }
 
 
@@ -312,6 +317,10 @@ a {
   .textured-namebanner {
     width: 50vw;
     padding: 10px;
+  }
+
+  .thumbnails {
+    grid-template-columns: 1fr;
   }
 
   /*.ptext {
