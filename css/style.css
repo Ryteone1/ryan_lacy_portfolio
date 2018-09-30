@@ -262,9 +262,9 @@ a {
 
 
 #thumbnail-1 {
-  /*background-image: url("../img/amigos-screenshot3.JPG");*/
+  background-image: url("../img/amigos.JPG");
   /*background-image: url("../img/cool-building.jpg");*/
-  background-image: url("../img/Crystal_collector_snapshot.JPG");
+  /*background-image: url("../img/Crystal_collector_snapshot.JPG");*/
   background-repeat: no-repeat;
   background-position: cover;
   background-size: 100% 100%;
@@ -274,16 +274,16 @@ a {
 }
 
 #thumbnail-2 {
-  /*background: url("../img/Ryte-car-screenshot3.JPG");*/
+  background: url("../img/ryte-car.JPG");
   /*background-image: url("../img/keyboard-dark-bg.jpg");*/
-  background-image: url("../img/Crystal_collector_snapshot.jpg");
+  /*background-image: url("../img/Crystal_collector_snapshot.jpg");*/
   background-size: 100% 100%;
   /*background-attachment: fixed;*/
 }
 
 
 #thumbnail-3 {
-  background-image: url("../img/crystal_collector_snapshot.jpg");
+  background-image: url("../img/crystal_collector.jpg");
   /*background-image: url("../img/amigos-screenshot3.png");*/
   background-size: 100% 100%;
   /*background-attachment: fixed;*/
@@ -292,8 +292,8 @@ a {
 
 #thumbnail-4 {
   /*background-image: url("../img/Ryte-car-screenshot3.png");*/
-  /*background-image: url("../img/bamazon1.gif");*/
-  background-image: url("../img/crystal_collector_snapshot.JPG");
+  background-image: url("../img/bamazon.jpg");
+  /*background-image: url("../img/crystal_collector_snapshot.JPG");*/
   background-size: 100% 100%;
   /*background-attachment: fixed;*/
 }
