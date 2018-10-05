@@ -9,7 +9,9 @@ body, html{
   font-family:"Marcellus SC", sans-serif;
   /*font-family: 'Lato', 'Arial', sans-serif;*/
   font-weight:400;
-  line-height:1.8em;
+  /*line-height:1.8em;*/
+  /*line-height:3em;*/
+  line-height:2em;
   /*color:#666;*/
 }
 
@@ -17,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3, .pimg4{
   position:relative;
   /*opacity:0.70;*/
   background-position:center;
@@ -34,16 +36,21 @@ a {
 
 .pimg2{
   background-image:url('../img/cool-building.jpg');
-  min-height:400px;
+  min-height: 400px;
   opacity: 0.8;
   /*position: relative;*/
 }
 
 .pimg3{
-  background-image:url('../img/snail.webp');
+  background-image:url('../img/dog.jpeg');
   /*background-size: 100% 100%;*/
   min-height:500px;
-  /*opacity: 0.5;*/
+  opacity: 0.5;
+}
+
+.pimg4 {
+  background-image:url('../img/light-header-bg.png');
+  min-height:100%;
 }
 
 
@@ -70,6 +77,10 @@ a {
   text-decoration: none;
 }
 
+.test {
+  background-color: red;
+}
+
 
 .textured-namebanner {
   position: relative;
@@ -81,6 +92,7 @@ a {
   font-size: 2vw;
   /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/black-texture.jpg");*/
   background-image: url("../img/black-texture.jpg");
+  /*background-image: url("../img/floating-up-bg.gif");*/
   background-position: center;
   background-size: cover;
   /*box-shadow: 10px 10px 38px -7px rgba(0,0,0,0.75);*/
@@ -194,56 +206,83 @@ a {
 
 /*  =================== SECTIONS =================== ======= */
 
-.section{
-  text-align:center;
+.section {
+  text-align: center;
+  padding: 4vh 6vw;
+  color:#f4f4f4;
+}
+
+.section-one {
   /*padding:10px 80px;  */
   /*font-size: 1.6rem;*/
   /*font-size: 2.5vw;*/
-  padding: 4vh 6vw;
+
+  /*background: rgba(36, 41, 38, 1);*/
+
+  background-image:url('../img/black-texture.jpg');
+  background-attachment: fixed;
+  /*background-size: cover;*/
+  position: relative;
+  z-index: -10;
+  /*top:0;*/
+  /*bottom: 0;*/
+  height: 188vh;
+
+  /*background: black;*/
+  /*background: #1D211E;*/
+  /*background: #242926;*/
+
+ /* background-image: url('../img/light-header-bg.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;*/
 }
 
 .section h2 {
   font-size: 2vw;
 }
 
+
 .section p {
-  font-size: 1.5vw;
+  font-size: 1.5vw;  
+  line-height: 1.3em;
 }
 
-#section-one{
-  /*background-image:url('../img/keyboard-dark-bg.jpg');*/
-  /*background: black;*/
-  /*background: #1D211E;*/
-  /*background: #242926;*/
 
-  background: rgba(36, 41, 38, 1);
-  /*background: rgba(0, 0, 0, 0.74);  */
-  /*position: relative;*/
-  /*opacity:0.70;*/
-  /*background-position:center;*/
-  /*background-size:cover;*/
-  /*background-repeat:repeat-y;*/
-  /*background-color:#666;*/
-  color:#f4f4f4;
-  /*width:100%;*/
-  /*margin: auto;*/
-  /*border: 4px solid red;*/
+.section-text {
+  margin: 6vh auto 8vh auto;
 }
+
+
+.section-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -5;
+}
+
 
 /*.border-transition {
   background: #f4f4f4;
 }*/
 
-.portfolio_intro {
-  margin-bottom: 10vh;
-}
 
 .thumbnails {
   /*position: relative;*/
-
   display: grid;
   grid-gap: 4vw;
-  grid-gap-top: 50px;
+  /*grid-gap-top: 50px;*/
+
+  margin: 0 6vw 0 6vw;
+  
+  /*justify-content: center;
+
+  margin: 6vw;
+  position: absolute;
+  top: 100%;*/
+
 
   /*grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
   grid-template-columns: 1fr 1fr;
@@ -284,6 +323,32 @@ a {
 }
 
 
+.wrapper {
+/*  margin-left:  0;
+  margin: 0 6vw 0 6vw;*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));*/
+  /*grid-template-columns: 160px 160px 160px 160px;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(160px, 320px));*/
+  /*justify-content: center;*/
+
+  /*grid-template-columns: repeat(4, 1fr));*/
+}
+
+
+.flip {
+  transform: scaleX(-1);
+  /*transform: rotateZ(-90deg);*/
+}
+
+.img {
+  /*background-image: url("../img/llama.gif");*/
+  /*display: block;*/
+  width: 160px;
+}
+
 #thumbnail-1 {
   background-image: url("../img/amigos.JPG");
   /*background-repeat: no-repeat;*/
@@ -316,6 +381,8 @@ a {
 
 
 .section-dark {
+  /*padding: 0;*/
+
   /*background-image: url("../img/black-texture.jpg");
   background-position:center;
   background-size:cover;
